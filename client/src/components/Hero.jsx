@@ -63,7 +63,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="pickup-date">Pick-up Date</label>
+            <label htmlFor="pickup-date">Pickup Date</label>
             <input
               value={pickupDate}
               onChange={(e) => setPickupDate(e.target.value)}

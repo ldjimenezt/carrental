@@ -77,7 +77,7 @@ const Cars = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="flex items-center bg-white px-4 mt-6 max-w-140 w-full h-12 rounded-full shadow"
         >
           <img src={assets.search_icon} alt="" className="w-4.5 h-4.5 mr-2" />
@@ -95,11 +95,11 @@ const Cars = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, duration: 0.5 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
         className="px-6 md:px-16 lg:px-24 xl:px-32 mt-10"
       >
         <p className="text-gray-500 xl:px-20 max-w-7xl mx-auto">
-          Showing
+          Showing{' '}
           {filteredCars.length} Cars
         </p>
       </motion.div>
